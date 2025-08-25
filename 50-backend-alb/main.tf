@@ -31,7 +31,6 @@ resource "aws_lb_listener" "backend_alb" {
     }
   }
 }
-/*
 resource "aws_route53_record" "backend_alb" {
   zone_id = var.zone_id
   name    = "*.backend-dev.${var.zone_name}"
@@ -42,4 +41,4 @@ resource "aws_route53_record" "backend_alb" {
     zone_id                = module.backend_alb.zone_id # This is the ZONE ID of ALB
     evaluate_target_health = true
   }
-}*/
+}
